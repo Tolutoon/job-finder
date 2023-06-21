@@ -7,6 +7,8 @@ import {BiLocationPlus} from 'react-icons/bi'
 const Search = () => {
 
     const [ inputValue, setInputValue ] = useState('');
+    const [ inputValue1, setInputValue1] = useState('');
+    const [ inputValue2, setInputValue2] = useState('');
 
     const handleCancel = () => {
         setInputValue('');
@@ -28,7 +30,7 @@ const Search = () => {
                 </div>
                 <div className='flex gap-3 items-center'>
                     <BsHouseDoor className='text-[20px] icon'/>
-                    <input type='text' value={inputValue} onChange={(e) => setInputValue(e.target.value)} className='bg-transparent text-blue-500 
+                    <input type='text' value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} className='bg-transparent text-blue-500 
                     focus:outline-none w-[100%]' placeholder='Search by Companies'/>
                     <button type='submit' onClick={handleCancel}>
                         <AiOutlineCloseCircle className='text-[20px] text-[#a5a6a6] 
@@ -37,7 +39,7 @@ const Search = () => {
                 </div>
                 <div className='flex gap-3 items-center'>
                     <BiLocationPlus className='text-[20px] icon'/>
-                    <input type='text' value={inputValue} onChange={(e) => setInputValue(e.target.value)} className='bg-transparent text-blue-500 
+                    <input type='text' value={inputValue2} onChange={(e) => setInputValue2(e.target.value)} className='bg-transparent text-blue-500 
                     focus:outline-none w-[100%]' placeholder='Search by Location'/>
                     <button type='submit' onClick={handleCancel}>
                         <AiOutlineCloseCircle className='text-[20px] text-[#a5a6a6] 

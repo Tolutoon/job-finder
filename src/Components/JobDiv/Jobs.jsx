@@ -132,8 +132,8 @@ const Jobs = () => {
               </div>
               <button
                 className="border-[2px] rounded-[10px] block p-[10px] w-full text-[14px] 
-                        font-semibold text-textColor hover:bg-white group-hover/item:text-textColor
-                        group-hover:text-blueColor"
+                        font-semibold text-textColor hover:bg-blueColor group-hover/item:text-textColor
+                        group-hover:text-white"
               >
                 Apply Now
               </button>
