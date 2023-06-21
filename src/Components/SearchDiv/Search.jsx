@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {AiOutlineSearch} from 'react-icons/ai';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import {BsHouseDoor} from 'react-icons/bs'
 import {BiLocationPlus} from 'react-icons/bi'
 
 const Search = () => {
+
+    const [ inputValue, setInputValue ] = useState('');
+
+    const handleCancel = () => {
+        setInputValue('');
+    }
+
   return (
     <div className='searchDiv grid gap-10 bg-greyIsh rounded-[10px] p-[3rem]'>
         <form action=''>
@@ -12,24 +19,30 @@ const Search = () => {
             gap-[10px] bg-white p-5 shadow-lg shadow-greyish-700'>
                 <div className='flex gap-3 items-center'>
                     <AiOutlineSearch className='text-[20px] icon'/>
-                    <input type='text' className='bg-transparent text-blue-500 
+                    <input type='text' value={inputValue} onChange={(e) => setInputValue(e.target.value)} className='bg-transparent text-blue-500 
                     focus:outline-none w-[100%]' placeholder='Search For Jobs'/>
-                    <AiOutlineCloseCircle className='text-[20px] text-[#a5a6a6] 
-                    icon hover:text-textColor'/>
+                    <button type='submit' onClick={handleCancel}>
+                        <AiOutlineCloseCircle className='text-[20px] text-[#a5a6a6] 
+                        icon hover:text-textColor'/>
+                    </button>
                 </div>
                 <div className='flex gap-3 items-center'>
                     <BsHouseDoor className='text-[20px] icon'/>
-                    <input type='text' className='bg-transparent text-blue-500 
-                    focus:outline-none w-[100%]' placeholder='Search By Company'/>
-                    <AiOutlineCloseCircle className='text-[20px] text-[#a5a6a6] 
-                    icon hover:text-textColor'/>
+                    <input type='text' value={inputValue} onChange={(e) => setInputValue(e.target.value)} className='bg-transparent text-blue-500 
+                    focus:outline-none w-[100%]' placeholder='Search by Companies'/>
+                    <button type='submit' onClick={handleCancel}>
+                        <AiOutlineCloseCircle className='text-[20px] text-[#a5a6a6] 
+                        icon hover:text-textColor'/>
+                    </button>
                 </div>
                 <div className='flex gap-3 items-center'>
                     <BiLocationPlus className='text-[20px] icon'/>
-                    <input type='text' className='bg-transparent text-blue-500 
-                    focus:outline-none w-[100%]' placeholder='Search By Location'/>
-                    <AiOutlineCloseCircle className='text-[20px] text-[#a5a6a6] 
-                    icon hover:text-textColor cursor-pointer'/>
+                    <input type='text' value={inputValue} onChange={(e) => setInputValue(e.target.value)} className='bg-transparent text-blue-500 
+                    focus:outline-none w-[100%]' placeholder='Search by Location'/>
+                    <button type='submit' onClick={handleCancel}>
+                        <AiOutlineCloseCircle className='text-[20px] text-[#a5a6a6] 
+                        icon hover:text-textColor'/>
+                    </button>
                 </div>
 
                 <button className='bg-blueColor h-full p-5 px-10 rounded-[10px] text-white  hover:bg-blue-400'>Search</button>
