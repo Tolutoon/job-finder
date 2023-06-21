@@ -72,7 +72,7 @@ const Data = [
   {
     id: 7,
     image: Logo7,
-    title: "Senior Data Engineer",
+    title: "Brand Manager",
     time: "96H",
     location: "China",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum.",
@@ -81,7 +81,7 @@ const Data = [
   {
     id: 8,
     image: Logo6,
-    title: "Cyber Security Engineer",
+    title: "Data Engineer",
     time: "3 days",
     location: "Lagos",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum.",
@@ -100,7 +100,7 @@ const Jobs = () => {
 
           return (
             <div key={id}
-              className="group group/item singleJob w-[250px] p-[20px] bg-white
+              className="group group/item singleJob w-[270px] p-[20px] bg-white
                     rounded-[10px] hover:bg-blueColor shadow-lg shadow-greyIsh-400/700 hover:shadow-lg"
             >
               <span className="flex justify-between items-center gap-4">
