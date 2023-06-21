@@ -1,7 +1,12 @@
 import React from "react";
+
 import Logo1 from "../../Assets/Airbnb.png";
 import Logo2 from '../../Assets/nike.jpeg';
 import Logo3 from '../../Assets/tiktok.jpeg';
+import Logo4 from '../../Assets/huawei.png';
+import Logo5 from '../../Assets/nescafe.png';
+import Logo6 from '../../Assets/oracle.png';
+import Logo7 from '../../Assets/microsoft.png';
 
 
 import { BiTimeFive } from "react-icons/bi";
@@ -24,18 +29,63 @@ const Data = [
     image: Logo2,
     title: "Product Manager",
     time: '2 days',
-    location: "New York, USA",
+    location: "New York",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum.",
     company: "Nike",
   },
   {
-    id: 1,
+    id: 3,
     image: Logo3,
     title: "Graphic Designer",
     time: "3 days",
-    location: "Canada",
+    location: "Ireland",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum.",
     company: "TikTok",
+  },
+  {
+    id: 4,
+    image: Logo4,
+    title: "Back-End Developer",
+    time: "48H",
+    location: "Lagos",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum.",
+    company: "Huawei",
+  },
+  {
+    id: 5,
+    image: Logo5,
+    title: "Data Engineer",
+    time: "72H",
+    location: "Ireland",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum.",
+    company: "Nescafe",
+  },
+  {
+    id: 6,
+    image: Logo6,
+    title: "UX Designer",
+    time: "3 days",
+    location: "Ireland",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum.",
+    company: "Oracle",
+  },
+  {
+    id: 7,
+    image: Logo7,
+    title: "Senior Data Engineer",
+    time: "96H",
+    location: "China",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum.",
+    company: "Microsoft",
+  },
+  {
+    id: 8,
+    image: Logo6,
+    title: "Cyber Security Engineer",
+    time: "3 days",
+    location: "Lagos",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, earum.",
+    company: "Oracle",
   },
 ];
 
